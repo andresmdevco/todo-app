@@ -8,9 +8,12 @@ const Filters = {
 
 const state = {
     todos: [
-        new Todo('Piedra del alma'),
-        new Todo('Piedra del infinito'),
-        new Todo('Piedra del tiempo'),
+        new Todo('Gema de la mente'),
+        new Todo('Gema del alma'),
+        new Todo('Gema del infinito'),
+        new Todo('Gema del tiempo'),
+        new Todo('Gema del poder'),
+        new Todo('Gema de la realidad')
     ],
 
     filter: Filters.All
@@ -58,7 +61,13 @@ const addTodo = (description) => {
  * @param {String} todoId 
  */
 const toggleTodo = (todoId) => {
-    throw new Error('Not implemented');
+
+    state.todos = state.todos.map(todo => {
+        if (todo.id === todoId) {
+            todo.done = !todo.done;
+        }
+        return todo;
+    });
 }
 
 const deleteTodo = (todoId) => {
@@ -80,7 +89,6 @@ const setFilter = (newFilter = Filters.All) => {
 const getCurrentFilter = () => {
     return state.filter;
 }
-
 
 
 
