@@ -34,7 +34,7 @@ const getTodos = (filter = Filters.All) => {
     
     switch(filter) {    
         case Filters.All:
-            return {...state.todos};
+            return [...state.todos];
         case Filters.Completed:
             return state.todos.filter(todo => todo.done);
         case Filters.Pending:
@@ -53,7 +53,7 @@ const getTodos = (filter = Filters.All) => {
 const addTodo = (description) => {
     if (!description) throw new Error('Description is required')
 
-    state.todos.push(new Todo(decription));
+    state.todos.push(new Todo(description));
 }
 
 /**
@@ -75,7 +75,7 @@ const deleteTodo = (todoId) => {
 }
 
 const deleteCompleted = () => {
-    state.todos = state.todos.filter(todo => todo.done);
+    state.todos = state.todos.filter(todo => !todo.done);
 }
 
 /**
