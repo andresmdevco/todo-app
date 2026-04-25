@@ -7,15 +7,7 @@ export const Filters = {
 }
 
 const state = {
-    todos: [
-        // new Todo('Gema de la mente'),
-        // new Todo('Gema del alma'),
-        // new Todo('Gema del infinito'),
-        // new Todo('Gema del tiempo'),
-        // new Todo('Gema del poder'),
-        // new Todo('Gema de la realidad')
-    ],
-
+    todos: [],
     filter: Filters.All
 }
 
