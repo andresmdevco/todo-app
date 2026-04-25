@@ -294,21 +294,11 @@ body {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	position: absolute;
-	right: 0;
-	left: 0;
-}
-
-/* 
-.filters {
-	margin: 0;
-	padding: 0;
-	list-style: none;
 	display: inline-block;
-	position: relative;
+    position: relative; 
 	right: auto;
 	left: auto;
-} */
+}
 
 .filters li {
 	display: inline;
