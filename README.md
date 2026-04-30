@@ -8,14 +8,9 @@ Una aplicación de gestión de tareas (TodoMVC) construida con **Vanilla JavaScr
 👉 [Probar App](https://todo-app-andresmdevco.netlify.app/)
 
 <p align="center">
-  <img src="screenshots/demo.gif" width="600"/>
+  <img src="screenshots/demo.gif" width="700"/>
 </p>
 
-<p align="center">
-  <img src="screenshots/Todos.png" width="250"/>
-  <img src="screenshots/pendings.png" width="250"/>
-  <img src="screenshots/completed.png" width="250"/>
-</p>
 
 ## 🛠 Tecnologías
 
